@@ -51,7 +51,7 @@
           <p>If you want to learn more about the recipe or want to recommend recipe then please make sure you fill up this form in order to contact me.</p>
         </article>
         <article>
-          <form class="form contact-form" action="mailto:ojas_art_studio@pm.me" method="post" enctype="application/x-www-form-urlencoded">
+          <form class="form contact-form">
             <!--single form row-->
             <div class="form-row">
               <label for="name" class="form-label">Your Name:</label>
@@ -70,7 +70,7 @@
               <textarea name="message" id="message" class="form-textarea"></textarea>
             </div>
             <!--end of single form row-->
-            <button type="submit" class="btn btn-block">Submit</button>
+            <button type="submit" class="btn btn-block" onsubmit="window.open("mailto:ojas_art_studio@pm.me?subject=Enquiry%20Email&body=Name:%20"+form.name.value+"%0AEmail%20"+form.email.value+"%0AMessage%3A%0A"+form.message.value);">Submit</button>
           </form>
         </article>
       </section>
